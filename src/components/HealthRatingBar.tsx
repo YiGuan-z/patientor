@@ -7,7 +7,7 @@ type BarProps = {
   rating: number;
   showText: boolean;
 };
-
+//style
 const StyledRating = withStyles({
   iconFilled: {
     color: "#ff6d75",
@@ -16,7 +16,7 @@ const StyledRating = withStyles({
     color: "#ff3d47",
   },
 })(Rating);
-
+//Risk assessment
 const HEALTHBAR_TEXTS = [
   "The patient is in great shape",
   "The patient has a low risk of getting sick",

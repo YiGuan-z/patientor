@@ -12,9 +12,11 @@ import { Typography } from "@material-ui/core";
 
 const App = () => {
   const [, dispatch] = useStateValue();
+  //Detection Dispatch Filed
   React.useEffect(() => {
+    //Try ping host
     void axios.get<void>(`${apiBaseUrl}/ping`);
-
+    //Try Async get PatientList
     const fetchPatientList = async () => {
       try {
         const { data: patientListFromApi } = await axios.get<Patient[]>(

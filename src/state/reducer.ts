@@ -10,8 +10,9 @@ export type Action =
       type: "ADD_PATIENT";
       payload: Patient;
     };
-
+//set reducer state
 export const reducer = (state: State, action: Action): State => {
+  //Select Typed Field
   switch (action.type) {
     case "SET_PATIENT_LIST":
       return {
